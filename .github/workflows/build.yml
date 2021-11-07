@@ -36,8 +36,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run the build
         run: |
-          python build.py build -p x64 --vs-ver 16 libffi
-          ls C:\gtk-build
+          python build.py build -p x64 --vs-ver 16 glib
+          ls C:\gtk-build\gtk
 #       - uses: actions/upload-artifact@v2
 #         with:
 #           name: 
