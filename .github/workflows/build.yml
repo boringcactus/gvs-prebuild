@@ -27,6 +27,7 @@ jobs:
         with:
           # A list of files, directories, and wildcard patterns to cache and restore
           path: C:\gtk-build
+          key: the-cache-smdh
       - uses: actions/checkout@v2
         with:
           # Repository name with owner. For example, actions/checkout
