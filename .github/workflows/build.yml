@@ -36,9 +36,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run the build
         run: |
-          python build.py build --fast-build -p x64 --vs-ver 16 gtk3
-          ls C:\gtk-build\gtk\x64\release
-#       - uses: actions/upload-artifact@v2
-#         with:
-#           name: 
-#           path: 
+          python build.py build --fast-build -p x64 --vs-ver 16 pixman
+      - uses: actions/upload-artifact@v2
+        with:
+          name: out-dir
+          path: C:\gtk-build\gtk\x64\release
